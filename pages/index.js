@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/image';
+import Banner from '../components/Banner'
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -11,7 +13,8 @@ export default function Home() {
       </Head>
 
       <main>
-        
+        <Navbar />
+        <Banner heading='Côncavo Photography' message='I preserve natural moments by photographing them.' />
       </main>
 
     </div>
