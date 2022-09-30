@@ -13,7 +13,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <Navbar />
         <Banner heading='Côncavo Photography' message='I preserve natural moments by photographing them.' />
       </main>
 
