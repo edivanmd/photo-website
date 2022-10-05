@@ -15,7 +15,7 @@ const Navbar = () => {
     {name: 'Home', path: '/'},
     {name: 'Gallery', path: '/#gallery'},
     {name: 'Portfolio', path: '/#portfolio'},
-    {name: 'Contact', path: '/#contact'},
+    {name: 'Contact', path: '/#contact'}
   ]
 
   const handleNavbar = () => {
