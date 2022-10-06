@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { SliderData } from './SliderData';
+import { sliderData } from './sliderData';
 import {GoArrowLeft, GoArrowRight} from 'react-icons/go';
 
 import style from '../styles';
@@ -25,7 +25,7 @@ const Slider = ({ slides }) => {
     <div id='gallery' className={style.galleryWrap}>
       <h2 className={style.titleH2}>Gallery</h2>
       <div className={style.galleryImagesWrap}>
-        {SliderData.map((slide, index) => (
+        {sliderData.map((slide, index) => (
           <div key={index} className={index === current ? 'opacity-[1] easy-in duration-1000': 'opacity-0'}>
               <GoArrowLeft onClick={prevSlide} size={50} className={style.galleryLeftArrow} />
               {index === current && (
