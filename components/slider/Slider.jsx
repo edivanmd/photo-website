@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { SliderData } from './SliderData';
 import {GoArrowLeft, GoArrowRight} from 'react-icons/go';
 
-import style from './styles';
+import style from '../styles';
 
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image';
 import Banner from '../components/Banner'
-import Slider from '../components/Slider';
-import { SliderData } from '../components/SliderData';
+import Slider from '../components/slider/Slider';
+import { SliderData } from '../components/slider/SliderData';
 
 export default function Home() {
   return (
