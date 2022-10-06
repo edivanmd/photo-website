@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image';
 import Banner from '../components/Banner'
-import Navbar from '../components/Navbar';
+import Slider from '../components/Slider';
+import { SliderData } from '../components/SliderData';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
 
       <main>
         <Banner heading='Côncavo Photography' message='I preserve natural moments by photographing them.' />
+        <Slider slides={SliderData} />
       </main>
 
     </div>

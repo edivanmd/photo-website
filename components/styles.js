@@ -1,6 +1,6 @@
 const style = {
     // Banner Home
-    bannerWrap: 'flex items-center justify-center h-screen mb-[10rem] bg-fixed bg-center bg-cover custom-img',
+    bannerWrap: 'flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img',
     bannerOverlay: 'absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]',
     bannerTextBox: 'p-5 text-white z-[2] mt-[-10rem]',
     bannerTitle: 'text-5xl font-bold',
@@ -16,7 +16,16 @@ const style = {
     navbarLink: 'p-4 hover:text-gray-500',
     
     navbarBtnMenuMobile: 'block sm:hidden z-10',
-    navbarLinkMobile: 'p-4 hover:text-gray-500 text-4xl'
+    navbarLinkMobile: 'p-4 hover:text-gray-500 text-4xl',
+
+    //Gallery
+    galleryWrap: 'max-x-[1240px] mx-auto',
+    galleryImagesWrap: 'relative flex justify-content p-4',
+    galleryLeftArrow: 'absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]',
+    galleryRightArrow: 'absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]',
+
+    //General Styles
+    titleH2: 'text-3xl font-bold text-center p-4',
 }
 
 export default style;
