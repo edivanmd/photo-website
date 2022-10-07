@@ -62,7 +62,7 @@ const Navbar = () => {
         }>
           <ul>
             {navLinks.map((link, index) => (
-              <li key={index} className='p-4 hover:text-gray-500 text-4xl'>
+              <li onClick={handleNavbar} key={index} className='p-4 hover:text-gray-500 text-4xl'>
                 <Link href={link.path}>{link.name}</Link>
               </li>
             ))}

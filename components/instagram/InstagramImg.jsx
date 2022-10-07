@@ -4,14 +4,17 @@ import {TiSocialInstagram} from 'react-icons/ti';
 
 import style from '../styles';
 
-const InstagramImg = ({ socialImg }) => {
+const InstagramImg = ({ igInfo }) => {
   return (
-    <div className={style.instagramImgWrap}>
-        <Image className={style.instagramImgWrapImage} src={socialImg} alt='Images' layout='responsive' />
-        {/* Overlay */}
-        <div className={style.instagramImgWrapOverlay} />
-        <p className={style.instagramImgWrapIgTag}><TiSocialInstagram size={30} /></p>
-    </div>
+    <li className={style.instagramImgWrap}>
+        <Image src={igInfo.image} alt='Images' layout='responsive' />
+        <div className={style.instagramImgWrapOverlay}>
+          <p className={style.instagramImgWrapIgTag}>
+            <TiSocialInstagram size={30} className={style.instagramImgWrapIgIcon} />
+            <span>{igInfo.title}</span>
+          </p>
+        </div>
+    </li>
   )
 }
 

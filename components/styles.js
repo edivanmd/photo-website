@@ -27,12 +27,14 @@ const style = {
     // Instagram
     instagramWrap: 'max-w-[1240px] mx-auto text-center py-24',
     instagramWrapAddress: 'pb-4',
+    instagramWrapGrid: 'grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-4',
 
     //Instagram Images
     instagramImgWrap: 'relative',
     instagramImgWrapImage: 'w-full h-full',
     instagramImgWrapOverlay: 'flex justify-center items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50 group',
-    instagramImgWrapIgTag: 'text-gray-300 hidden group-hover:block',
+    instagramImgWrapIgTag: 'text-gray-300 hidden group-hover:block text-center',
+    instagramImgWrapIgIcon: 'm-auto',
 
     //General Styles
     titleH2: 'text-4xl font-bold text-center p-4',
