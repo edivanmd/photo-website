@@ -12,9 +12,9 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState('white');
 
   const navLinks = [
-    {name: 'Home', path: '/'},
+    // {name: 'Home', path: '/'},
     {name: 'Gallery', path: '/#gallery'},
-    {name: 'Portfolio', path: '/#portfolio'},
+    {name: 'Projects', path: '/projects'},
     {name: 'Contact', path: '/#contact'}
   ]
 
