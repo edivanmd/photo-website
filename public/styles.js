@@ -36,9 +36,18 @@ const style = {
     instagramImgWrapIgTag: 'text-gray-300 hidden group-hover:block text-center',
     instagramImgWrapIgIcon: 'm-auto',
 
+    //Project - component
+    projectList: 'w-full h-full col-span-2 md:col-span-3 row-span-2',
+    
+    //Projects - page
+    projectsPgWrap: 'max-w-[1240px] mx-auto py-16 text-center',
+    projectsPgWrapGrid: 'grid grid-rows-none md:grid-cols-5 p-4 gap-4',
+    
+
     //General Styles
     titleH2: 'text-4xl font-bold text-center p-4',
     titleH3: 'text-2xl font-bold text-center p-4',
+    
 }
 
 export default style;

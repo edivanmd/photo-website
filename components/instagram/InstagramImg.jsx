@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import {TiSocialInstagram} from 'react-icons/ti';
 
-import style from '../styles';
+import style from '../../public/styles';
 
 const InstagramImg = ({ igInfo }) => {
   return (

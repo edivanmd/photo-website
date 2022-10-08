@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import {RiCloseCircleFill, RiMenu3Fill} from 'react-icons/ri';
 
-import style from './styles';
+import style from '../public/styles';
 
 
 const Navbar = () => {

@@ -3,7 +3,7 @@ import React from 'react';
 import igData from './igData';
 import InstagramImg from './InstagramImg';
 
-import style from '../styles';
+import style from '../../public/styles';
 
 const Instagram = () => {
   return (
