@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-import style from '../public/styles';
-
 const Project = ({ dataProject }) => {
   return (
-    <li className={style.projectList}>
+    <li className='w-full h-full first:col-span-2 first:md:col-span-3 first:row-span-2'>
       <Image
           src={dataProject.image}
           alt='/'
@@ -13,7 +11,7 @@ const Project = ({ dataProject }) => {
           width='677'
           height='451'
         />
-        <span>{dataProject.title}</span>
+        {/* <span>{dataProject.title}</span> */}
     </li>
   )
 }

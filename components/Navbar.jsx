@@ -2,9 +2,6 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import {RiCloseCircleFill, RiMenu3Fill} from 'react-icons/ri';
 
-import style from '../public/styles';
-
-
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);
@@ -13,6 +10,7 @@ const Navbar = () => {
 
   const navLinks = [
     // {name: 'Home', path: '/'},
+    {name: 'Home', path: '/'},
     {name: 'Gallery', path: '/#gallery'},
     {name: 'Projects', path: '/projects'},
     {name: 'Contact', path: '/#contact'}
@@ -36,9 +34,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav style={{backgroundColor: `${color}`}} className={style.navbarWrap}>
-      <div className={style.navbarInner}>
-        <Link href='/'><h1 style={{color: `${textColor}`}} className={style.navbarLogo}>Côncavo</h1></Link>
+    <nav style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
+      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
+        <Link href='/'><h1 style={{color: `${textColor}`}} className='font-bold text-5xl'>Côncavo</h1></Link>
         <div>
           <ul className='hidden sm:flex' style={{color: `${textColor}`}}>
             {navLinks.map((link, index) => (
@@ -50,7 +48,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Button */}
-        <div onClick={handleNavbar} className={style.navbarBtnMenuMobile}>
+        <div onClick={handleNavbar} className='block sm:hidden z-10'>
           {nav ? <RiCloseCircleFill size={20} /> : <RiMenu3Fill size={20} style={{color: `${textColor}`}} />}
         </div>
 

@@ -2,8 +2,6 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Project from '../components/Project';
 
-import style from '../public/styles';
-
 const dataProjects = [
   {
     title: 'Patagonia - Agentina',
@@ -27,9 +25,9 @@ const projects = () => {
   return (
     <main>
       <Banner heading='My Projects' message='This is some of my recent work traveling the world. Enjoy it!' />
-      <div className={style.projectsPgWrap}>
-        <h2 className={style.titleH2}>Travel Photos</h2>
-        <ul className={style.projectsPgWrapGrid}>
+      <div className='max-w-[1240px] mx-auto py-16 text-center'>
+        <h2 className='text-4xl font-bold text-center p-4'>Travel Photos</h2>
+        <ul className='grid grid-rows-none md:grid-cols-5 p-4 gap-4'>
           {dataProjects.map((dataProject, index) => (
             <Project dataProject={dataProject} key={index}/>
           ))}
