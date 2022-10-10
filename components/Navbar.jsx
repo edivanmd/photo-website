@@ -9,11 +9,9 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState('white');
 
   const navLinks = [
-    // {name: 'Home', path: '/'},
-    {name: 'Home', path: '/'},
     {name: 'Gallery', path: '/#gallery'},
     {name: 'Projects', path: '/projects'},
-    {name: 'Contact', path: '/#contact'}
+    {name: 'Contact', path: '/contact'}
   ]
 
   const handleNavbar = () => {
@@ -36,7 +34,7 @@ const Navbar = () => {
   return (
     <nav style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'><h1 style={{color: `${textColor}`}} className='font-bold text-5xl'>Côncavo</h1></Link>
+        <Link href='/'><h1 style={{color: `${textColor}`}} className='font-bold text-5xl cursor-pointer'>Côncavo</h1></Link>
         <div>
           <ul className='hidden sm:flex' style={{color: `${textColor}`}}>
             {navLinks.map((link, index) => (
