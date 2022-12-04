@@ -39,7 +39,7 @@ const Navbar = () => {
           <ul className='hidden sm:flex' style={{color: `${textColor}`}}>
             {navLinks.map((link, index) => (
               <li key={index} className='p-4 hover:text-gray-500'>
-                <Link href={link.path}>{link.name}</Link>
+                <Link href={link.path}><a>{link.name}</a></Link>
               </li>
             ))}
           </ul>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <ul>
             {navLinks.map((link, index) => (
               <li onClick={handleNavbar} key={index} className='p-4 hover:text-gray-500 text-4xl'>
-                <Link href={link.path}>{link.name}</Link>
+                <Link href={link.path}><a>{link.name}</a></Link>
               </li>
             ))}
           </ul>
